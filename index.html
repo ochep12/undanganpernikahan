@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Undangan Pernikahan - Afrila & Abdul</title>
+    <!-- Google Fonts & FontAwesome -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Poppins:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- QR Code Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Cover Tamu / Halaman Depan -->
+    <div id="cover" class="cover-section">
+      <div class="cover-content">
+        <p class="small-title">The Wedding of</p>
+        <h1>Afrila & Abdul</h1>
+        <p class="guest-note">Kepada Yth. Bapak/Ibu/Saudara/i</p>
+        <h3 id="guest-name">Tamu Undangan</h3>
+        <button id="open-btn" class="btn-elegant">
+          <i class="fa-solid fa-envelope-open"></i> Buka Undangan
+        </button>
+      </div>
+    </div>
+
+    <!-- Konten Utama Undangan -->
+    <div id="main-content" class="main-content hidden">
+      <!-- Header / Hero Section -->
+      <header class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-text">
+          <p>We Are Getting Married</p>
+          <h1>Afrila & Abdul</h1>
+          <p class="date">Sabtu, 28 Desember 2026</p>
+        </div>
+      </header>
+
+      <!-- Mempelai Section -->
+      <section class="couple-section">
+        <div class="container">
+          <h2 class="section-title">Kami Mengundang</h2>
+          <p class="intro-text">
+            Tanpa mengurangi rasa hormat, kami mengundang Bapak/Ibu/Saudara/i
+            sekalian untuk menghadiri acara pernikahan kami:
+          </p>
+
+          <div class="couple-grid">
+            <div class="person">
+              <div class="photo-frame">
+                <img
+                  src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=500&q=80"
+                  alt="Afrila"
+                />
+              </div>
+              <h2>Afrila</h2>
+              <p>Putri dari Bpk.joko & Ibu Puan</p>
+            </div>
+
+            <div class="ampersand">&</div>
+
+            <div class="person">
+              <div class="photo-frame">
+                <img
+                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=500&q=80"
+                  alt="Abdul"
+                />
+              </div>
+              <h2>Abdul</h2>
+              <p>Putra dari Bpk.bowo & Ibu mega</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Waktu & Tempat -->
+      <section class="event-section">
+        <div class="container">
+          <h2 class="section-title">Acara Pernikahan</h2>
+          <div class="event-cards">
+            <div class="card">
+              <i class="fa-solid fa-ring"></i>
+              <h3>Pemberkatan</h3>
+              <p>
+                <i class="fa-regular fa-calendar"></i> Sabtu, 28 Desember 2026
+              </p>
+              <p><i class="fa-regular fa-clock"></i> 08.00 WIB - Selesai</p>
+              <p>
+                <i class="fa-solid fa-location-dot"></i> Gereja Paroki, Lembor
+              </p>
+            </div>
+            <div class="card">
+              <i class="fa-solid fa-champagne-glasses"></i>
+              <h3>Resepsi</h3>
+              <p>
+                <i class="fa-regular fa-calendar"></i> Sabtu, 28 Desember 2026
+              </p>
+              <p><i class="fa-regular fa-clock"></i> 11.00 WIB - 14.00 WIB</p>
+              <p>
+                <i class="fa-solid fa-location-dot"></i> Halaman Rumah Bpk.Joko
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Bagian QR Code Undangan -->
+      <section class="qr-section">
+        <div class="container">
+          <h2 class="section-title">Barcode Lokasi Undangan</h2>
+          <p>Scan QR untuk lokasinya</p>
+          <div class="qr-box">
+            <div id="qrcode"></div>
+            <p class="qr-link-text" id="current-url">
+              Scan QR Untuk Membuka Google Maps Lokasi
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer>
+        <p>
+          Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila
+          Bapak/Ibu/Saudara/i berkenan hadir.
+        </p>
+        <p class="footer-names">Afrila & Abdul</p>
+        <p class="copyright">&copy; 2026 Elegant Wedding Invitation.</p>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
